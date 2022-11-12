@@ -18,6 +18,7 @@ body {
 h1 {
     font-size: 6rem;
     font-weight: 100;
+    margin: auto
 }
 
 h2 {
@@ -34,18 +35,20 @@ p {
 .main-container {
     width: 100%;
     height: 90vh;
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-rows: 20% auto 20%;
     justify-content: center;
     align-items: center;
 }
 
 .dog-container {
     background-color: rgb(232, 199, 159);
-    width: 70%;
+
     height: 70%;
     min-height: 600px;
+    min-width: 600px;
     max-width: 800px;
+    margin: auto;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     border: 0.2rem solid rgb(137, 122, 103);
@@ -73,4 +76,21 @@ p {
     align-self: center;
     height: 80%;
     padding: 2rem;
+}
+
+#button {
+
+    background-color: rgb(236, 176, 103);
+    font-size: 2rem;
+    color: rgb(72, 58, 41);
+    border: 1px solid rgb(137, 122, 103);
+    padding: 2rem 6rem;
+    text-align: center;
+    border-radius: 2rem;
+    margin: 3rem auto;
+
+}
+
+#button:hover {
+    background-color: rgb(218, 173, 119);
 }
